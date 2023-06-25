@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html {
+   scroll-behavior: smooth;
+}
+#root {
+  position:relative;
+}
+body {
+   font-family: 'Noto Sans KR', sans-serif;
+   background-color:#f0f4f8;
+   overflow-x: hidden;
+}
+.container{
+   max-width: 95%;
+   margin-left:auto;
+   margin-right:auto;
+}
+.d-flex{
+  display:flex;
+  justify-content: space-between;
+}
+.f-flex{
+  display: flex;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+li{
+  list-style: none;
+}
+.uppercase {
+   text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+button{
+  border: none;
+  outline: none;
+  background-color: none;
+}
+.row, .left, .right {
+  width: 50%;
+}
+.top{
+  margin-top: 80px;
+}
+.mtop{
+  margin-top: 40px;
+}
+.heading{
+  margin: 50px 0 50px 0;
+}
+.heading h4{
+  color: #777;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+.heading h1{
+  font-size: 60px;
+  color:#3c3e41;
+} 
+h1{
+  color:#3c3e41;
+}
+.grid{
+  display:grid;
+  /*
+  grid-templeate-columns : 1fr 2fr 1fr;
+  */
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 35px;
+}
+.grid2{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 35px;
+}
+p{
+  color:#3c3e41;
+}
+.text-center{
+  text-align: center;
+}
+.primary-color{
+  color:#888;
+}
+textarea, input{
+  width: 100%;
+  padding:20px;
+  border-radius: 5px;
+  outline: none;
+  border: 3px solid #e2e8ec;
+  margin-bottom: 20px;
+}
+
+@media (max-width : 768px) {
+  .grid{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .left, .right{ 
+    width:100%;
+  }
+}
+
+.btn-shadow{
+  /*text-align:center;*/
+  margin-right: 20px;
+  padding:5px;
+  border-radius:5px;
+  box-shadow:-2px -2px 5px rgba(255,255,255,1),
+              3px 3px 5px rgba(0,0,0,0.1);
+}
+.btn-shadow:hover{
+  box-shadow:-2px -2px 8px rgba(255,255,255,1),
+              3px 3px 8px rgba(0,0,0,0.2);    
+}
+.btn-shadow:active{
+  box-shadow: inset -2px -2px 5px rgba(255,255,255,1),
+              inset 3px 3px 5px rgba(0,0,0,0.1);
+}
+.icon{
+  font-size:30px;
+  color:#43474b;
+}
